@@ -1,0 +1,151 @@
+:root {
+    --color-white: #ffffff;
+    --color-pink: #f0c9ea;
+    --color-pink2:#e8258e;
+    --color-black:#000000;
+    --color-gray:#6d6875;
+}
+
+body{
+    font-family: poppins, sans-serif;
+    background-color: var(--color-pink);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction:column ;
+}
+
+.logo{
+    height: 80px;
+    margin-bottom: 20px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 0px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    background: linear-gradient(35deg, #ff006e 0%, #e8258e 50%, #9d4edd 100%);
+    -webkit-background-clip: text;
+}
+
+.logo img{
+    background: linear-gradient(135deg, #ff006e 0%, #e8258e 50%, #9d4edd 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    filter: drop-shadow(0 0 10px rgba(232, 37, 142, 0.6));
+}
+
+.content-login-box{
+  width: 3000px;
+  display: flex;
+  flex-direction: column;
+  max-width: 520px;
+  background-color: #ffffff;
+  border-radius: 2.5rem;
+  margin: 0 auto;
+  margin-top: 5%;
+  box-shadow: 0 12px 30px rgba(232, 37, 142, 0.35);
+  -webkit-box-shadow: 10px 10px 24px 3px rgba(232, 37, 142, 0.68);
+  -moz-box-shadow: 10px 10px 24px 3px rgba(232, 37, 142, 0.68);
+  padding: 64px 64px;
+  box-sizing: border-box;
+}
+
+.message{
+    font-size: 16px;
+    font-weight: 700;
+    height: auto;
+    margin-bottom: 5%;
+    display: flex;
+    justify-content: center;
+  
+}
+.inputs{
+    width: 100%;
+    margin: 0 auto 16px auto;
+    border: 1px solid silver;
+    border-radius: 6px;
+    padding: 12px 14px;
+    max-width: 420px;
+    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+   
+}
+
+.remember-container {
+  width: 100%;
+  max-width: 420px;
+  margin: 0 auto 16px auto;
+  display: flex;
+  align-items: center;
+}
+
+.checkbox {
+ margin: 0;
+}
+
+.remember-me {
+font-size: 14px;
+margin-left: 6px;
+
+}
+
+.btn-enter{
+    width: 100%;
+    max-width: 420px;
+    padding: 12px;
+    font-size: 14px;
+    background-color: var(--color-pink2);
+    border: none;
+    color: #ffffff;
+    border-radius: 5px;
+    margin: 0 auto 5% auto;
+    text-transform: uppercase;
+    margin-bottom: 0.625rem;
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 0.05rem;
+    display: block;    
+}
+.forgot-password {
+    display: block;           
+    text-align: right;          
+    margin-right: 12px;          
+    margin-top: 13px;       
+}
+
+a{
+    outline: none;
+    text-decoration: none;
+    color: #000000;
+}
+
+a:hover{
+    color: var(--color-pink2)
+}
+
+.signup{
+    text-align: center;
+    margin-top: 32px; 
+}
+.no-account{
+    font-size: 17px;
+    display: inline;
+    margin-top: 24px;
+}
+
+
+.no-account:hover{
+    color: var(--color-pink2)
+}
+
+.create-account{
+    font-size: 17px;
+    display: inline;
+    margin-left: 5px; 
+    cursor: pointer; 
+    color: var(--color-pink2)
+}

@@ -1,0 +1,183 @@
+:root {
+  --gray: #71767b;
+  --blue: #1d9bf0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: black;
+  color: white;
+  font-family: "TwitterChirpExtendedHeavy", "Verdana", system-ui, sans-serif;
+}
+
+/* ===== Layout principal ===== */
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 80px 24px;
+  display: flex;
+  align-items: flex-start;
+}
+
+.left {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo {
+  width: 320px;
+  fill: white;
+}
+
+.right {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+
+/* ===== Texto ===== */
+
+h1 {
+  font-size: 64px;
+  font-weight: 700;
+  margin: 0;
+}
+
+h3 {
+  font-size: 31px;
+  margin: 16px 0 32px;
+}
+
+.content {
+  margin-bottom: 20px;
+}
+
+/* ===== Botões ===== */
+
+.buttons {
+  max-width: 360px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.btn {
+  width: 100%;
+  padding: 12px;
+  border-radius: 999px;
+  font-size: 15px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.social {
+  background: white;
+  color: black;
+  border: none;
+}
+
+.social img {
+  width: 18px;
+  height: 18px;
+}
+
+.primary {
+  background: var(--blue);
+  border: none;
+  color: white;
+  font-weight: 600;
+}
+
+.outline {
+  background: black;
+  border: 1px solid var(--gray);
+  color: white;
+}
+
+/* ===== Divider ===== */
+
+.divider {
+  display: flex;
+  align-items: center;
+  color: var(--gray);
+  font-size: 14px;
+}
+
+.divider::before,
+.divider::after {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background: var(--gray);
+}
+
+.divider span {
+  padding: 0 12px;
+}
+
+/* ===== Texto pequeno ===== */
+
+.terms {
+  font-size: 11px;
+  color: var(--gray);
+}
+
+.terms a {
+  color: var(--blue);
+  text-decoration: none;
+}
+
+.have-account {
+  font-size: 15px;
+  margin-top: 12px;
+}
+
+/* ===== Mini logo ===== */
+
+.mini-logo {
+  width: 16px;
+  height: 16px;
+  fill: white;
+}
+
+/* ===== Responsividade (igual ao X) ===== */
+
+@media (max-width: 900px) {
+
+  .container {
+    flex-direction: column;
+    padding: 24px;
+  }
+
+  .left {
+    width: 100%;
+    justify-content: flex-start;
+  }
+
+  .logo {
+    width: 40px;
+  }
+
+  .right {
+    width: 100%;
+    margin-top: 24px;
+  }
+
+  h1 {
+    font-size: 40px;
+  }
+
+  h3 {
+    font-size: 20px;
+  }
+}

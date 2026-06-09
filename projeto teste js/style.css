@@ -1,0 +1,95 @@
+.item {
+    display: none;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    background-color: var(--background);
+}
+
+.item.active {
+    display: block;
+
+}
+
+.item .title {
+    font-size: 16rem;
+    color: #ffffff;
+    font-weight: bold;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.item .fruit {
+    width: 90%;
+    position: absolute;
+    top: 0;
+    z-index: 3;
+}
+
+.item .soad {
+    z-index: 2;
+    width: 600px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#prev svg, #next svg {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 50px;
+    height: 50px;
+    background: transparent;
+    border: none;
+    color: white;
+    cursor: pointer;
+    pointer-events: all; /* reativa clique */
+    font-size: x-large;
+    transition: filter 0.3s ease;
+    font-family: monospace;
+    z-index: 100;
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+
+#prev svg {
+    left: 20px;
+}
+
+
+#next svg {
+    right: 20px;
+}
+
+#prev svg:hover, #next svg:hover {
+    filter: drop-shadow(0 0 10px black);
+    transform: translateY(-50%) scale(1.1);
+    transition: 0.3s ease;
+    width: 55px;
+    height: 55px;
+  
+}
+
+@keyframes toActive {
+    from{
+        top: 100%;
+        opacity: 0;
+    }
+}
+
+.item.active img.fruit{
+    animation: toActive 0.6s ease-in-out 1;
+}
+
+.item.active .title{
+    animation: toActive 0.6s ease-in-out 1;
+}

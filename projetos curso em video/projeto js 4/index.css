@@ -1,0 +1,50 @@
+body {
+    background-color: rgb(78, 144, 243);
+    font-family: Arial, sans-serif;
+}
+
+header {
+    text-align: center;
+    color: aliceblue;
+    text-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+
+}
+
+section {
+    padding: 20px;
+    background-color: aliceblue;
+    border-radius: 10px;
+    width: 600px;
+    height: auto;
+    margin: auto;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+    font-size:18px;
+}
+
+button {
+    padding: 3px 10px;
+    background-color: rgb(30, 64, 114);
+    color: aliceblue;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+footer {
+    text-align: center;
+    margin-top: 20px;
+    color: aliceblue;
+    font-style: italic; 
+}
+
+div{
+  
+    padding: 10px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}

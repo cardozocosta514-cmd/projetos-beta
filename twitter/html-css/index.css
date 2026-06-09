@@ -1,0 +1,140 @@
+.root {
+ --color-gray: #71767b;
+
+}
+
+body {
+  background-color: black;   /* fundo preto */
+  font-family: "TwitterChirpExtendedHeavy", "Verdana", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+
+}
+
+.left {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo {
+  width: 200px;            /* largura do logo */
+  height: auto;           /* altura automática para manter proporção */
+  padding: 0px 0px 12px;
+}
+
+.right {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+
+.content {
+  margin-bottom: 20px;
+  color: white;
+}
+
+.buttons {
+    margin-top: 20px;      /* espaço acima dos botões */
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;            /* espaço entre os botões */
+    max-width: 350px;
+    width: 100%;
+    font-size: 15px ;
+}
+
+.btn-google, .btn-apple, .btn-crete-account{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:10px;
+    width: 100%;
+    padding: 10px;
+    border-radius: 320px;
+    align-items: center;
+    border: white 1px solid;
+    font-size: 16px;
+
+}
+
+.img{
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+.divider{
+  display: flex;
+  text-align: center;
+  align-items: center;
+  color: white;
+  width: 100%;
+  gap: 10px;
+  margin: 0px 0; 
+}
+
+.divider::before,
+.divider::after {
+    content: "";
+    flex: 1;
+    height: 1px;
+    margin: 0 10px;
+    border-bottom: 1px solid #ffffff;
+}
+
+.divider::before {
+  margin-right: 10px;
+}
+
+.divider::after {
+  margin-left: 10px;
+}
+
+.btn-login, .install-app {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap:10px;
+  width: 100%;
+  padding: 10px;
+  border-radius: 320px;
+  align-items: center;
+  color: white;
+  background-color: black;
+  font-size: 16px;
+  border-color: var(--color-gray);
+}
+
+h1 {
+  font-size: 64px;
+  font-weight: 700;
+  margin: 0;
+
+}
+
+h3 {
+  font-size: 31px;
+  font-weight: 700;
+  margin: 16px 0 32px;
+}
+
+p {
+  font-size: 11px;
+  margin-top: 0px 0px 20px;
+  color:  #71767b;
+}
+
+a {
+  color: #1D9BF0;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}

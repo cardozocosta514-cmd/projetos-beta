@@ -1,0 +1,118 @@
+
+.corpo {font-family: Arial, Helvetica, sans-serif;
+
+font-size: 12px;
+
+color: #4d5051;
+
+background-color: #d6d6d6;
+
+margin: 0px;}
+
+.menu {background-image: url(fundo-menu.png);
+
+background-repeat: no-repeat;
+
+background-position: left top;
+
+width: 1000px;
+
+height: 74px;
+
+float: left;}
+
+.menu li a {font-family: Arial, Helvetica, sans-serif;
+
+font-size: 12px;
+
+line-height: 74px;
+
+color: #FFFFFF;
+
+text-decoration: none;
+
+height: 74px;
+
+float: left;
+
+padding-left: 10px;
+
+display: block;}
+
+.menu-dropdown {position: relative;
+
+display: inline-block;}
+
+.botao-menu {background-color: rgba(0,0,0,0);
+
+color: white;
+
+padding: 16px;
+
+font-family: Arial, Helvetica, sans-serif;
+
+font-size: 16px;
+
+font-weight: bold;
+
+border: none;
+
+cursor: pointer;
+
+margin-top: 8px;}
+
+.lista-opcoes {display: none;
+
+position: absolute;
+
+background-color: rgba(160,195,160,0.9);
+
+min-width: 160px;
+
+box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);}
+
+.lista-opcoes a {color: black;
+
+padding: 12px 16px;
+
+text-decoration: none;
+
+display: block;
+
+font-weight: bold;}
+
+.lista-opcoes a:hover { background-color: rgba(128,174,222,1)}
+
+.menu-dropdown:hover .lista-opcoes { display: block;}
+
+.menu-dropdown:hover .botao-menu {color: #000;
+
+display: inline-block;
+
+vertical-align: middle;
+
+background: #47C4ED;
+
+opacity: 0.5;
+
+-webkit-transform: translateZ(0);
+
+transform: translateZ(0);
+
+box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+
+-webkit-backface-visibility: hidden;
+
+backface-visibility: hidden;
+
+-moz-osx-font-smoothing: grayscale;
+
+-webkit-transition-duration: 0.3s;
+
+transition-duration: 0.3s;
+
+-webkit-transition-property: background;
+
+transition-property: background;
+
+box-shadow: inset 0 0 0 4px #e1e1e1, 0 0 1px rgba(0, 0, 0, 0);}

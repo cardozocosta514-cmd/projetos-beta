@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'Android';
+    src: url('/fontes/idroid.otf') format('truetype');
+}
+:root {
+    --color1: #C5EBD6;
+    --color2: #83e1ad;
+    --color3: #3ddc84;
+    --color4: #2fa866;
+    --color5: #063d1e;
+    --font1: arial,helvetica,sans-serif;
+    --font2: 'Bebas Neue', cursive;
+    --font3: 'Android', sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+    scroll-padding-top: 80px;
+}
+html, body {
+    overflow-x: hidden;
+}
+body {
+    background-color: var(--color1);
+    font-family: var(--font1);  
+    
+}
+main {
+    max-width: 1000px; /* largura do conteúdo */
+    margin: auto; /* centraliza */
+    background-color: white; /* fundo branco */
+
+}
+
+header  {
+    background: linear-gradient(to bottom, var(--color2), var(--color3), var(--color4), var(--color5));
+    color: white;
+    text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.6);
+    padding:40px;
+    padding-bottom: 20px;
+    
+}
+.content {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+nav li {
+    color: whitesmoke;
+}
+li{
+    display:inline-block;
+
+    list-style: none;
+    margin-top: 25px;
+    padding: 5px 10px;
+    font-size: 18px;
+    border: 1px solid transparent; 
+    color: rgb(0, 0, 0);
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
+}
+
+li:hover{
+    background-color: rgba(7, 92, 48, 0.507);
+    border: 1px solid rgba(3, 56, 19, 0.5);
+    border-radius: 40px;
+    transition: all 0.3s ease;
+}
+
+div h1{
+    font-size: 50px;
+    margin-bottom: 20px;
+    font-family: var(--font3);
+ 
+}
+
+h1,h2{
+    margin: 20px;
+    font-family: var(--font3);
+}
+p{  
+    margin: 20px;
+    font-size: 18px;
+    line-height: 1.6;
+    font-style: normal;
+}
+
+img {
+    max-width: 100%;  
+    height: auto;
+    display: block;
+    margin: 20px auto;
+}
+
+iframe {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    border: none;
+}
+
+aside ul {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    padding: 10px;
+}
+footer {
+    background-color: var(--color5);
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+    padding: 20px;
+    text-align: center;
+}
+
+.reveal {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: all 0.8s ease;
+}
+
+.reveal.show {
+    opacity: 1;
+    transform: translateY(0);
+}
